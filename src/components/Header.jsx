@@ -17,7 +17,7 @@ const Header = () => {
                 <a href="#" className="text-red-wine font-semibold text-[20px]">Home</a>
                 <a href="#" className="text-red-wine font-semibold text-[20px]">Projects</a>
                 <a href="#" className="text-red-wine font-semibold text-[20px]">Resume</a>
-                <a href="#" className="text-red-wine font-semibold text-[20px] flex items-center gap-4 border border-red-wine px-4 py-2 rounded-3xl hover:bg-white hover:transition hover:duration-500 hover: hover:text-red-wine">Let's Talk <FaArrowRightLong /></a>
+                <a href="#" className="text-red-wine font-semibold text-[20px] flex items-center gap-4 border border-red-wine px-4 py-2 rounded-3xl hover:bg-white hover:transition hover:duration-500 hover: hover:text-red-wine">Let&apos;s Talk <FaArrowRightLong /></a>
             </nav>
             <div className={`fixed top-0 left-0 h-full w-full md:hidden bg-red-wine transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`}>
                 <IoClose style={{color:'white', cursor:'pointer',marginLeft:'auto', marginTop:'1rem', marginRight:'1rem'}} size={40} onClick={toggleMenu} />
@@ -25,7 +25,7 @@ const Header = () => {
                     <a href="#" className="text-white font-semibold text-[20px]">Home</a>
                     <a href="#" className="text-white font-semibold text-[20px]">Projects</a>
                     <a href="#" className="text-white font-semibold text-[20px]">Resume</a>
-                    <a href="#" className="text-white font-semibold text-[20px] flex items-center gap-4 border border-white px-4 py-2 rounded-3xl hover:bg-white hover:transition hover:duration-500 hover: hover:text-red-wine">Let's Talk <FaArrowRightLong /></a>
+                    <a href="#" className="text-white font-semibold text-[20px] flex items-center gap-4 border border-white px-4 py-2 rounded-3xl hover:bg-white hover:transition hover:duration-500 hover: hover:text-red-wine">Let&apos;s Talk <FaArrowRightLong /></a>
                 </nav>
             </div>
         </div>
