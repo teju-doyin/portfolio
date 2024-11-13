@@ -6,8 +6,8 @@ const Hero = () => {
     const [finished, setFinished] = useState(false);
 
     const [text] = useTypewriter({
-        // words: ['Hello','Hola', '안녕하세요','Bonjour','こんにちは','Ciao', '你好', 'Hello'],
-        words: ['Hello','Hola','Hello' ],
+        words: ['Hello','Hola', '안녕하세요','Bonjour','こんにちは','Ciao', '你好', 'Hello'],
+        // words: ['Hello','Hola','Hello' ],
         loop: 1,
         typeSpeed: 100,
         deleteSpeed: 80,
