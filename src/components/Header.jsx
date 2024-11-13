@@ -8,11 +8,10 @@ const Header = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
   return (
     <header className='sticky top-0 z-50  '>
-        <div className='flex justify-between items-center w-[95%] mx-auto pb-4 pt-6'>
+        <div className='flex justify-between  items-center  pb-4 pt-6'>
             <img src={logo} alt="" width={60} />
-            <div className="bg-red-wine rounded-3xl px-5 py-1.5 md:hidden">
-                <HiMenuAlt3 style={{color:'white', cursor:'pointer'}} size={30} onClick={toggleMenu} />
-            </div>
+            <HiMenuAlt3 style={{color:'white', cursor:'pointer'}} size={30} onClick={toggleMenu} />
+            
             <nav className="md:flex w-[60%] justify-between items-center hidden">
                 <a href="#" className="text-red-wine font-semibold text-[20px]">Home</a>
                 <a href="#" className="text-red-wine font-semibold text-[20px]">Projects</a>

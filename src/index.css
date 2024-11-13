@@ -1,3 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+    font-family: "Ubuntu", sans-serif;
+    background-color: #F2E9E4;
+}
+.oval-container {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    color: #4169e1;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    margin-left: 4rem;
+  }
+  
+  .oval-container::before,
+  .oval-container::after,
+  .oval-container .third-oval {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 1px solid #4169e1;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  .oval-container::before {
+    transform: scale(1.1) rotate(2deg);
+  }
+  
+  .oval-container::after {
+    transform: scale(1.2) rotate(-3deg);
+  }
+  
+  .oval-container .third-oval {
+    transform: scale(1.3) rotate(1deg);
+  }
+  .typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid #4169e1; /* Same color as your cursor */
+    animation: typing 1.5s steps(5, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #4169e1; }
+  }
+  

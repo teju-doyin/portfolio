@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       colors:{
-        'rose': '#EDD8E2',
-        'cherry': '#BF7896',
-        'dahlia': '#DFB8CC',
-        'raspberry': '#D895B1',
-        'red-wine': '#9B5372',
+        'white': '#F2E9E4',
+        'lavender': '#CEB2BD',
+        'grayishPurple': '#8E7692',
+        'purple': '#572E54',
+        'deepPurple': '#482A41',
       },
     },
   },
