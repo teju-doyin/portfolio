@@ -7,7 +7,7 @@ function App() {
   
 
   return (
-    <div className=' bg-grayishPurple'>
+    <div className=' bg-deepPurple'>
       <div className="w-[90%] mx-auto">
         <Header />
         <Hero />
