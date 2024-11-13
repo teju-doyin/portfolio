@@ -11,7 +11,7 @@ export default {
         'lavender': '#CEB2BD',
         'grayishPurple': '#8E7692',
         'purple': '#572E54',
-        'deepPurple': '#EF4171',
+        'deepPurple': '#BB445E',
         // 'deepPurple': '#58977F',
       },
     },
