@@ -14,7 +14,7 @@ const Hero = () => {
         onLoopDone: ()=>setFinished(true)
     })
   return (
-    <div className='text-[1.3rem] text-white mt-8'>
+    <div className='text-[1.1rem] text-white mt-8 rounded-bl-lg'>
         <h1 className=''>
             {/* { ' '} */}
             <span className=''>{text}</span>
@@ -26,7 +26,7 @@ const Hero = () => {
         <p className=''> I'm Teju, a frontend developer <br />Crafting delightful web experiences one pixel at a time. 
         Dive in to see my journey, projects, and what I've been up to!
         </p>
-        <button className='mt-7'> My Resume <MdOutlineFileDownload style={{color:'white', display:"inline"}} />
+        <button className='my-9 bg-lavender px-3 py-2 rounded-sm'> My Resume <MdOutlineFileDownload style={{color:'white', display:"inline"}} />
         </button>
     </div>
   )
