@@ -10,7 +10,7 @@ const AboutMe = () => {
         <div className="flex flex-col justify-center items-center gap-5">
             <div className=" z-10  "><img src={profile} alt="Profile" width={120} className='rounded-full ' /></div>
             <div className="">
-                <div className="relative oval-container font-semibold text-pink border border-pink">
+                <div className="relative oval-container font-semibold ">
                   About me
                   <span className="third-oval"></span>
                 </div>

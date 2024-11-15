@@ -24,7 +24,7 @@ function App() {
         </div> */}
       </div >
     </div>
-    <div className="bg-white">
+    <div className="bg-white curved-section">
       <div className=" relative pb-12 rounded-tr-[3rem] rounded-br-[3rem]  border-r-[1px]  border-r-pink bg-offWhite">
         <AboutMe/>
         <div className='w-[98%] relative bottom-20'>
@@ -35,7 +35,7 @@ function App() {
       </div>
     </div>
     <div className="bg-offWhite">
-      <div className="rounded-tl-[3rem] bg-lavender  border-l-[1px]   border-l-pink">
+      <div className="rounded-tl-[3rem] bg-lavender   border-l-[1px]   border-l-pink">
           <Contact/>
       </div>
     </div>
