@@ -7,7 +7,7 @@ body{
     /* background-color: #ea95d3; */
 }
 .curved-section {
-  background: linear-gradient(to right, white 50%, #fad5f0 50%); /* Replace #e3a1d6 with your lavender color */
+  background: linear-gradient(to right, white 50%, #f8e2f2 50%); /* Replace #e3a1d6 with your lavender color */
   border-radius: 0 50px 0 0; /* Adjust radius to match your design */
 }
 
