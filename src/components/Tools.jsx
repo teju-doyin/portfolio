@@ -7,7 +7,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 
 const Tools = () => {
   return (
-    <section className="text-blackish">
+    <section className="text-blackish mb-16">
       <div>
         <h4 className="font-semibold text-pink mb-2">Tools I use</h4>
         <p className='text-[.9rem mb-3'>Here are some awesome tools I use to make development and problem solving easier and faster.</p>

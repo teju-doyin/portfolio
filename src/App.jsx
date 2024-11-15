@@ -3,6 +3,9 @@ import './index.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
+import { RxDoubleArrowUp } from "react-icons/rx";
+import Projects from './components/Projects'
+import Contact  from './components/Contact'
 
 function App() {
   
@@ -22,13 +25,18 @@ function App() {
       </div >
     </div>
     <div className="bg-white">
-      <div className="pb-12 rounded-tr-[3rem] rounded-br-[3rem]  border-r-[1px]  border-r-pink bg-offWhite">
+      <div className=" relative pb-12 rounded-tr-[3rem] rounded-br-[3rem]  border-r-[1px]  border-r-pink bg-offWhite">
         <AboutMe/>
+        <div className='w-[98%] relative bottom-20'>
+          <RxDoubleArrowUp size={20} className='text-pink bg-white border border-pink rounded-full p-[2px] ml-auto ' />
+        </div>
+        <Projects/>
+
       </div>
     </div>
     <div className="bg-offWhite">
-      <div className="rounded-tl-[3rem] bg-white  border-l-[1px]   border-l-pink">
-        Projects Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum atque, dignissimos deleniti eum vero deserunt sed? Aut, consequuntur quaerat.
+      <div className="rounded-tl-[3rem] bg-lavender  border-l-[1px]   border-l-pink">
+          <Contact/>
       </div>
     </div>
     </ div>

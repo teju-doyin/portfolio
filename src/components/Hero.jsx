@@ -14,16 +14,16 @@ const Hero = () => {
         onLoopDone: ()=>setFinished(true)
     })
   return (
-    <div className='text-[1.1rem] text-blackish mt-24 rounded-bl-lg'>
-        <h1 className='text-[1.3rem]'>
+    <div className='text-[1.1rem] text-blackish mt-[4rem] rounded-bl-lg'>
+        <h1 className='text-[1.3rem] text-pink'>
             {/* { ' '} */}
-            <span className='text-pink font-semibold'>{text}</span>
+            <span className=' font-semibold'>{text}</span>
             <span className=''>
                {!finished && <Cursor />}
             </span>
 
         </h1>
-        <p className=' text-justify'> I'm Teju, a frontend developer crafting <span className='text-lavender font-semibold'>delightful web experiences</span>  one pixel at a time. 
+        <p className=' text-justify'> I'm Teju, a frontend developer crafting <span className='text-brown font-semibold'>delightful </span> <span className=" text-pink font-semibold">web experiences</span>  one pixel at a time. 
         Dive in to see my journey, projects, and what I've been up to!
         </p>
         <button className='my-9 bg-pink text-offWhite px-3 py-2 rounded-sm'> My Resume <MdOutlineFileDownload style={{color:'white', display:"inline"}} />

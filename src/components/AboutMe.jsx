@@ -5,12 +5,12 @@ import Tools from './Tools';
 const AboutMe = () => {
   return (
     <section className='w-[90%] mx-auto '>
-      <div className='text-5xl font-bold opacity-5 text-lavender relative top-6 left-28  tracking-[.4rem]'>About me</div>
+      <div className='text-5xl font-bold opacity-10 text-lavender relative top-6 left-28  tracking-[.4rem]'>About me</div>
       <div className="">
         <div className="flex flex-col justify-center items-center gap-5">
             <div className=" z-10  "><img src={profile} alt="Profile" width={120} className='rounded-full ' /></div>
             <div className="">
-                <div className="relative oval-container font-semibold">
+                <div className="relative oval-container font-semibold text-pink border border-pink">
                   About me
                   <span className="third-oval"></span>
                 </div>
@@ -18,15 +18,15 @@ const AboutMe = () => {
         </div>
         <div className="text-justify py-5 text-blackish">
             <p>
-            I’m a junior frontend developer passionate about bringing ideas to life with clean, responsive, and interactive web designs. 
-            I'm particularly skilled in React while I have foundational experience with Redux, Next.js, and TypeScript.
+            I’m a Junior Frontend Developer passionate about bringing ideas to life with clean, responsive, and interactive web designs. 
+            I'm particularly skilled in <span className="text-brown font-medium">React</span> while I have foundational experience with <span className="text-brown font-medium">Redux</span>, <span className="text-brown font-medium">Next.js</span>, and <span className="text-brown font-medium">TypeScript</span>.
             </p>
             <p>
             {/* With a strong background in computer science and an internship that sharpened my skills, I've gained valuable experience building real-world applications that prioritize both aesthetics and user experience. */}
             {/* I thrive in collaborative environments, leveraging strong communication and teamwork skills to contribute meaningfully to team efforts and ensure project success. At the same time, I am equally adept at working independently, taking initiative, and driving tasks to completion with attention to detail and efficiency. */}
             </p>
-            <p>
-                When I'm not coding, you might find me exploring new design trends, learning a new language, or savoring a perfect cup of coffee.
+            <p className='mt-2'>
+                When I'm not coding, you might find me exploring new design trends, learning a language, or savoring a perfect cup of coffee.
             </p>
             <p>Let’s create something amazing together!</p>
         </div>
