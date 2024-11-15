@@ -35,7 +35,7 @@ function App() {
       </div>
     </div>
     <div className="bg-offWhite">
-      <div className="rounded-tl-[3rem] bg-lavender   border-l-[1px]   border-l-pink">
+      <div className="rounded-tl-[3rem] bg-[#fad5f0]   border-l-[1px]   border-l-pink">
           <Contact/>
       </div>
     </div>
