@@ -7,12 +7,14 @@ export default {
   theme: {
     extend: {
       colors:{
-        'white': '#F2E9E4',
-        'lavender': '#CEB2BD',
-        'grayishPurple': '#8E7692',
-        'purple': '#572E54',
-        'deepPurple': '#BB445E',
-        // 'deepPurple': '#58977F',
+        'white': '#fffdff',
+        'offWhite': '#f7f3f5',
+        'pink': '#e22c75',
+        'lavender': '#ea95d3', //for the about me background text
+        'deepBlue': '#061d40',
+        'blackish': '#282626',
+        'green': '#77c4ab',
+        'gray': '#36424d',
       },
     },
   },
