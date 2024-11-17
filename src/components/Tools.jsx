@@ -9,8 +9,8 @@ const Tools = () => {
   return (
     <section className="text-blackish mb-16">
       <div>
-        <h4 className="font-semibold text-pink mb-2">Tools I use</h4>
-        <p className='text-[.9rem mb-3'>Here are some awesome tools I use to make development and problem solving easier and faster.</p>
+        <h4 className="font-semibold text-pink mb-2 text-center">Tools I use</h4>
+        <p className='text-justify mb-3'>Here are some awesome tools I use to make development and problem solving easier and faster.</p>
       </div>
       <div>
         <ul className="grid grid-cols-3  md:grid-cols-4 gap-3">

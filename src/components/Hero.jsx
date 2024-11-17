@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import { MdOutlineFileDownload } from "react-icons/md";
-
+import resume from '../../public/resume.pdf'
 const Hero = () => {
     const [finished, setFinished] = useState(false);
 
@@ -23,11 +23,13 @@ const Hero = () => {
             </span>
 
         </h1>
-        <p className=' text-justify'> I'm Teju, a frontend developer crafting <span className='text-brown font-semibold'>delightful </span> <span className=" text-pink font-semibold">web experiences</span>  one pixel at a time. 
+        <p className=' text-justify'> I'm Teju, a frontend developer crafting <span className='text-lavender font-semibold'>delightful web experiences</span>  one pixel at a time. 
         Dive in to see my journey, projects, and what I've been up to!
         </p>
-        <button className='my-9 bg-pink text-offWhite px-3 py-2 rounded-sm'> My Resume <MdOutlineFileDownload style={{color:'white', display:"inline"}} />
-        </button>
+        <a href={resume} download="Teju's Resume">
+            <button className='my-9 bg-pink text-offWhite px-3 py-2 rounded-sm'> My Resume <MdOutlineFileDownload style={{color:'white', display:"inline"}} />
+            </button>
+        </a>
     </div>
   )
 }
