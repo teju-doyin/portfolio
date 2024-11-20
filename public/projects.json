@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "title": "Portfolio Website",
+      "shortDescription": "A personal website showcasing skills and projects creatively.",
+      "fullDetails": "A fully responsive portfolio website with smooth animations, showcasing skills, projects, and contact information. Built to highlight creativity and professionalism.",
+      "techStack": ["HTML", "CSS", "JavaScript", "React"],
+      "images": {
+        "mobile": "https://example.com/images/portfolio-mobile.png",
+        "desktop": "https://example.com/images/portfolio-desktop.png"
+      },
+      "link": "https://example.com/portfolio"
+    },
+    {
+      "id": 2,
+      "title": "E-Commerce App",
+      "shortDescription": "An online store for browsing and purchasing various products.",
+      "fullDetails": "A modern e-commerce web app that features user authentication, product categories, a shopping cart, and a secure checkout process. Designed for ease of use and scalability.",
+      "techStack": ["React", "Redux", "Node.js", "Express", "MongoDB"],
+      "images": {
+        "mobile": "https://example.com/images/ecommerce-mobile.png",
+        "desktop": "https://example.com/images/ecommerce-desktop.png"
+      },
+      "link": "https://example.com/ecommerce"
+    },
+    {
+      "id": 3,
+      "title": "Audiophile",
+      "shortDescription": "Organize tasks effectively with priority and deadline management.",
+      "fullDetails": "A productivity app that helps users create, organize, and track tasks. It includes features like categorization, priority levels, and due date reminders.",
+      "techStack": ["Vue.js", "Firebase", "Tailwind CSS"],
+      "images": {
+        "mobile": "https://example.com/images/task-manager-mobile.png",
+        "desktop": "https://example.com/images/task-manager-desktop.png"
+      },
+      "link": "https://example.com/task-manager"
+    },
+    {
+      "id": 4,
+      "title": "Recipe Finder",
+      "shortDescription": "Search for recipes by ingredients or dish name.",
+      "fullDetails": "A web app allowing users to search for recipes by entering ingredients or a dish name. Includes nutritional information and step-by-step instructions.",
+      "techStack": ["Next.js", "API Integration", "Chakra UI"],
+      "images": {
+        "mobile": "https://example.com/images/recipe-finder-mobile.png",
+        "desktop": "https://example.com/images/recipe-finder-desktop.png"
+      },
+      "link": "https://example.com/recipe-finder"
+    },
+    {
+      "id": 5,
+      "title": "Blog Platform",
+      "shortDescription": "A blogging platform for creating and sharing stories easily.",
+      "fullDetails": "A multi-user blogging platform featuring an editor, comment system, and post categories. Built for writers to share their stories with a broad audience.",
+      "techStack": ["Gatsby", "GraphQL", "Contentful"],
+      "images": {
+        "mobile": "https://example.com/images/blog-platform-mobile.png",
+        "desktop": "https://example.com/images/blog-platform-desktop.png"
+      },
+      "link": "https://example.com/blog-platform"
+    }
+  ]
+  

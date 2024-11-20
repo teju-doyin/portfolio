@@ -1,4 +1,3 @@
-import React from 'react'
 import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
@@ -7,7 +6,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import audiophile from '../../public/audiophile.png'
+import audiophile from '../../public/audiophile-mobile.png'
 const Projects = () => {
   return (
     <section className='w-[90%] mx-auto '>
@@ -30,11 +29,11 @@ const Projects = () => {
                 <div className="p-1">
                     <Card className='border border-pink h-[20%]'>
                     <CardContent className="flex flex-col aspect-square rounded-md bg-white  items-center justify-center ">
-                        <img src={audiophile} alt="" className='rounded-t-md '/>
+                        {/* <img src={audiophile} alt="" className='rounded-t-md '/>
                         <div className="">
                             <h2>Education Website</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore?</p>
-                        </div>
+                        </div> */}
                     </CardContent>
                     </Card>
                 </div>
