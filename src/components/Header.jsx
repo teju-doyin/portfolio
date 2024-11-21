@@ -39,7 +39,7 @@ const Header = () => {
                 <div
                     className={`fixed top-0 left-0 h-full w-full md:hidden bg-offWhite transform ${
                         isMenuOpen ? 'translate-x-0' : '-translate-x-full'
-                    } transition-transform duration-300 ease-in-out`}
+                    } transition-transform duration-500 ease-in-out`}
                 >
                     <IoClose
                         style={{

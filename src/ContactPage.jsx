@@ -9,15 +9,12 @@ const ContactPage = () => {
   return (
     <div className=" ">
       <div className=" text-brown w-[90%] mx-auto bg-[#f8e2f2 flex flex-col mt-[4rem] ">
-        {/* <div className="flex justify-center mb-5 z-10">
-          <div className="relative oval-container my-6 font-semibold text-white">
-            Let's talk
-            <span className="third-oval"></span>
-          </div>
-        </div> */}
+      <div className="flex ">
         <Link to='/'>
           <FaArrowLeftLong size={30} className='bg-pink p-2 cursor-pointer mb-7 rounded-full text-white'/>
         </Link>
+        <h2 className="font-semibold text-[1.3rem] flex justify-center w-[90%] text-brown">Let's talk</h2>
+      </div>
         <div className=" rounded-t-3xl pt-4">
           <div className="mb-8 text-center ">
             <p>Have a project in mind? Write me so we can make something amazing.</p>
@@ -54,20 +51,20 @@ const ContactPage = () => {
               {/* tj.doyin@gmail.com */}
             </a>
             <a
-              href="https://x.com/tj_doyin"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-pink hover:underline"
-            >
-              <RiTwitterXFill/>
-            </a>
-            <a
               href="https://www.linkedin.com/in/tejudoyin/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink hover:underline"
             >
               <FaLinkedin/>
+            </a>
+            <a
+              href="https://x.com/tj_doyin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink hover:underline"
+            >
+              <RiTwitterXFill/>
             </a>
           </div>
       </div>
