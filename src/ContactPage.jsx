@@ -1,20 +1,25 @@
 import React from 'react';
-import { MdAttachEmail } from "react-icons/md";
+import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
+
 const ContactPage = () => {
   return (
-    <div className="bg-offWhite ">
-      <div className="min-h-screen text-brown w-[90%] mx-auto bg-[#f8e2f2 flex flex-col mt-[4rem] ">
+    <div className=" ">
+      <div className=" text-brown w-[90%] mx-auto bg-[#f8e2f2 flex flex-col mt-[4rem] ">
         {/* <div className="flex justify-center mb-5 z-10">
           <div className="relative oval-container my-6 font-semibold text-white">
             Let's talk
             <span className="third-oval"></span>
           </div>
         </div> */}
-        
-        <div className="flex flex-col rounded-t-3xl pt-4">
-          <div className="mb-4 ">
+        <Link to='/'>
+          <FaArrowLeftLong size={30} className='bg-pink p-2 cursor-pointer mb-7 rounded-full text-white'/>
+        </Link>
+        <div className=" rounded-t-3xl pt-4">
+          <div className="mb-8 text-center ">
             <p>Have a project in mind? Write me so we can make something amazing.</p>
           </div>
           <form className="mb-5 flex flex-col ">
@@ -45,7 +50,7 @@ const ContactPage = () => {
               href="mailto:tj.doyin@gmail.com"
               className="text-pink flex items-center gap-2 hover:underline"
             >
-              <MdAttachEmail size={20} />
+              <MdOutlineMarkEmailUnread size={20} />
               {/* tj.doyin@gmail.com */}
             </a>
             <a
