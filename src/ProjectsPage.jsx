@@ -13,13 +13,13 @@ const ProjectsPage = () => {
         <h2 className="font-semibold text-[1.3rem] flex justify-center w-[90%] text-brown">Projects</h2>
       </div>
       <section className="">
-        <div className="border border-pink p-2 rounded-2xl ">
+        <div className="border border-pink p-2 rounded-2xl bg-offWhite">
           <img
             src={audiophile}
             alt="Project Thumbnail"
             className="w-full rounded-2xl  "
           />
-          <div className=" bg-white mt-5 text-blackish">
+          <div className=" b-white mt-5 text-blackish">
             <div className="flex items-center gap-2">
               <h3 className="text-lg font-bold ">
                 Education Website
