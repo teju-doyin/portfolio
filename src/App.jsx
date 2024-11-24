@@ -8,7 +8,7 @@ function App() {
     return (
         <Router basename="/" future={{ v7_relativeSplatPath: true }}>
             <div className="overflow-x-hidden">
-                <Header />
+                {/* <Header /> */}
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/ProjectsPage" element={<ProjectsPage />} />
@@ -20,3 +20,7 @@ function App() {
 }
 
 export default App;
+// #TODO: change the waitr link
+// #TODO: Get desktop and mobile images
+// #TODO: complete atm card desktop view    
+// #TODO: fun names for each project

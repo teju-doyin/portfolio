@@ -8,7 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import audiophile from "../../public/audiophile-mobile.png";
-
+import projects from "../../public/projects.json"
 const Projects = () => {
   return (
     <section className="w-[90%] mx-auto">
@@ -35,24 +35,23 @@ const Projects = () => {
         className="w-[75%] mx-auto max-w-sm mb-5"
       >
         <CarouselContent>
-          {Array.from({ length: 3 }).map((_, index) => (
+        {projects.slice(0,3).map((project,index)=>(
             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
               <div className="p-2">
-                <Card className="border border-pink rounded-lg shadow-lg bg-white ">
+                <Card className="border border-pink rounded-lg bg-white ">
                   <CardContent className="flex text-blackish relative flex-col items-center justify-center p4 bg-white rounded-lg">
                     <img
-                      src={audiophile}
+                      src={project.images.thumbnail}
                       alt="Project Thumbnail"
                       className="w-full h- object-contain rounded-md "
                     />
 
-                    <div className="text-center absolute z-10 bg-white bottom-0 rounded-b-md rounded-t-[2rem] ">
-                      <h3 className="text-lg font-bold text-pink-600">
-                        Education Website
-                      </h3>
-                      <p className="text-sm text-gray-500 mt-2">
-                        A modern education platform that connects students with
-                        educators, featuring interactive tools and resources.
+                    <div className="text-center absolute border border-pink bg-white text-blackish z-10 py-1 px-1.5  bottom-0 rounded-b-md rounded-t-[1.5rem] ">
+                      <Link className="text-lg font-bold text-pink-600 border rounded-sm border-b-pink" to={project.link}>
+                        {project.title}
+                      </Link>
+                      <p className="text-sm text-justify  mt-1">
+                        {project.shortDescription}
                       </p>
                     </div>
                    

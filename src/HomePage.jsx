@@ -8,6 +8,7 @@ import { RxDoubleArrowUp } from "react-icons/rx";
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import HomeHeader from './components/HomeHeader';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -52,7 +53,9 @@ function App() {
       <div className="bg-offWhite">
         <div className='bg-white border-l-[1px] border-l-pink rounded-bl-[3rem]'>
           <div className="w-[90%] mx-auto rounded-bl-lg">
-            <Header />
+            <Header>
+              <HomeHeader/>
+            </Header>
             <Hero />
           </div>
         </div>

@@ -14,7 +14,7 @@ const Hero = () => {
         onLoopDone: ()=>setFinished(true)
     })
   return (
-    <div className='text-[1.1rem] text-blackish mt-[4rem] rounded-bl-lg'>
+    <div className='text-[1.1rem] pt-5 text-blackish mt-[4rem] rounded-bl-lg'>
         <h1 className='text-[1.3rem] text-pink'>
             {/* { ' '} */}
             <span className=' font-semibold'>{text}</span>

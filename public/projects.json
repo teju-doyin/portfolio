@@ -1,63 +1,78 @@
 [
     {
       "id": 1,
-      "title": "Portfolio Website",
-      "shortDescription": "A personal website showcasing skills and projects creatively.",
-      "fullDetails": "A fully responsive portfolio website with smooth animations, showcasing skills, projects, and contact information. Built to highlight creativity and professionalism.",
-      "techStack": ["HTML", "CSS", "JavaScript", "React"],
+      "title": "Dessertify",
+      "shortDescription": "A  dessert shopping page with seamless cart management.",
+      "fullDetails": "An interactive dessert shopping experience which includes a cart functionality and a responsive layout for a fun, engaging user experience",
+      "techStack": ["React", "Tailwind CSS", "JavaScript", "Redux"],
       "images": {
-        "mobile": "https://example.com/images/portfolio-mobile.png",
-        "desktop": "https://example.com/images/portfolio-desktop.png"
+        "thumbnail": "./desserts-thumbnail.jpg",
+        "mobile": "./desserts-mobile.jpg",
+        "desktop": "./desserts-desktop.jpg"
       },
-      "link": "https://example.com/portfolio"
+      "link": "https://dessert-product-page.vercel.app/"
     },
     {
       "id": 2,
-      "title": "E-Commerce App",
-      "shortDescription": "An online store for browsing and purchasing various products.",
-      "fullDetails": "A modern e-commerce web app that features user authentication, product categories, a shopping cart, and a secure checkout process. Designed for ease of use and scalability.",
-      "techStack": ["React", "Redux", "Node.js", "Express", "MongoDB"],
+      "title": "Waitr Landing Page",
+      "shortDescription": " A visually appealing intro page for an innovative food service.",
+      "fullDetails": "A modern food-ordering landing page created using Next.js. Includes responsive design, a functional waitlist pop-up modal, and a user-friendly interface for showcasing Waitr’s features and attracting potential users.",
+      "techStack": ["Next.js", "Tailwind CSS", "Email.js","Shad-cn", "JavaScript"],
       "images": {
-        "mobile": "https://example.com/images/ecommerce-mobile.png",
-        "desktop": "https://example.com/images/ecommerce-desktop.png"
+        "thumbnail": "./waitr-thumbnail.png",
+        "mobile": "./waitr-mobile.png",
+        "desktop": "./waitr-desktop.png"
       },
-      "link": "https://example.com/ecommerce"
+      "link": "https://waitr-lbfh.onrender.com/"
     },
     {
       "id": 3,
-      "title": "Audiophile",
-      "shortDescription": "Organize tasks effectively with priority and deadline management.",
-      "fullDetails": "A productivity app that helps users create, organize, and track tasks. It includes features like categorization, priority levels, and due date reminders.",
-      "techStack": ["Vue.js", "Firebase", "Tailwind CSS"],
+      "title": "MortgagePro",
+      "shortDescription": "Calculate and visualize mortgage payments for better financial planning",
+      "fullDetails": "This mortgage calculator allows users to input loan details and calculate monthly payments. The clean design and easy functionality make home financing simple.",
+      "techStack": ["React", "Tailwind CSS"],
       "images": {
-        "mobile": "https://example.com/images/task-manager-mobile.png",
-        "desktop": "https://example.com/images/task-manager-desktop.png"
+        "thumbnail": "./mortgage-calc-thumbnail.jpg",
+        "mobile": "./mortgage-calc-mobile.jpg",
+        "desktop": "./mortgage-calc-desktop.png"
       },
-      "link": "https://example.com/task-manager"
+      "link": ""
     },
     {
       "id": 4,
-      "title": "Recipe Finder",
-      "shortDescription": "Search for recipes by ingredients or dish name.",
-      "fullDetails": "A web app allowing users to search for recipes by entering ingredients or a dish name. Includes nutritional information and step-by-step instructions.",
-      "techStack": ["Next.js", "API Integration", "Chakra UI"],
+      "title": "Dev Finder",
+      "shortDescription": "Search GitHub users and view profiles with theme toggling.",
+      "fullDetails": "This React app simplifies GitHub user profile searches. With username-based retrieval, responsive layout, and theme switching, it’s a smooth and visually engaging experience.",
+      "techStack": ["HTML", "Vanilla Javascript", "Tailwind CSS", "API Integration"],
       "images": {
-        "mobile": "https://example.com/images/recipe-finder-mobile.png",
-        "desktop": "https://example.com/images/recipe-finder-desktop.png"
+        "mobile": "./devfinder-mobile.jpg",
+        "desktop": "./devfinder-desktop.png"
       },
-      "link": "https://example.com/recipe-finder"
+      "link": "https://tailwind-github-user-search.netlify.app/"
     },
     {
       "id": 5,
-      "title": "Blog Platform",
-      "shortDescription": "A blogging platform for creating and sharing stories easily.",
-      "fullDetails": "A multi-user blogging platform featuring an editor, comment system, and post categories. Built for writers to share their stories with a broad audience.",
-      "techStack": ["Gatsby", "GraphQL", "Contentful"],
+      "title": "Virtual Card Pro",
+      "shortDescription": " Interactive card form with real-time virtual card preview.",
+      "fullDetails": "A web app that  shows live updates of card information, offering users an interactive experience with a virtual card preview.",
+      "techStack": ["React", "Tailwind CSS"],
       "images": {
-        "mobile": "https://example.com/images/blog-platform-mobile.png",
-        "desktop": "https://example.com/images/blog-platform-desktop.png"
+        "mobile": "./atm-card-mobile.jpg",
+        "desktop": "./atm-desktop.jpg"
       },
-      "link": "https://example.com/blog-platform"
+      "link": "https://interactive-card-sable.vercel.app/"
+    },
+    {
+      "id": 6,
+      "title": "Tipster",
+      "shortDescription": "Modern, user-friendly app for calculating and sharing tips instantly",
+      "fullDetails": "Built to help split bills easily and accurately. Enjoy responsive design and a smooth user experience for hassle-free dining.",
+      "techStack": ["HTML", "Sass","Vanilla Javascript"],
+      "images": {
+        "mobile": "./tip-calc-mobile.jpg",
+        "desktop": "./tip-calc-desktop.png"
+      },
+      "link": "https://magnificent-truffle-0bbfc0.netlify.app/"
     }
   ]
   
