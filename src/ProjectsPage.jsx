@@ -1,7 +1,5 @@
 import {useState, useEffect} from 'react'
-import { FaArrowLeftLong } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
-// import audiophile from "../public/audiophile-mobile.png";
 import { IoIosLink } from "react-icons/io";
 import { Skeleton } from "@/components/ui/skeleton";
 import Header from './components/Header';

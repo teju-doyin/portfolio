@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes and Route
-import Header from './components/Header';
 import HomePage from './HomePage';
 import ProjectsPage from './ProjectsPage';
 import ContactPage from './ContactPage';
@@ -21,6 +20,4 @@ function App() {
 
 export default App;
 // #TODO: change the waitr link
-// #TODO: Get desktop and mobile images
 // #TODO: complete atm card desktop view    
-// #TODO: fun names for each project

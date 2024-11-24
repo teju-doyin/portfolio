@@ -7,12 +7,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import audiophile from "../../public/audiophile-mobile.png";
 import projects from "../../public/projects.json"
 const Projects = () => {
   return (
     <section className="w-[90%] mx-auto">
-      {/* Section Header */}
       <div className="flex justify-center mb-5">
         <div className="relative oval-container font-semibold">
           Recent Projects
@@ -20,14 +18,12 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* Section Description */}
       <p className="text-justify text-blackish mb-5">
         Here’s a glimpse at what I’ve been building! From interactive UIs to
         responsive web apps, these projects show my love for all things
         frontend.
       </p>
 
-      {/* Carousel */}
       <Carousel
         opts={{
           align: "start",

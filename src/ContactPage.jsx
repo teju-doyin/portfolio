@@ -1,9 +1,6 @@
-import React from 'react';
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
-import { FaArrowLeftLong } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
 import Header from './components/Header';
 import OtherHeader from './components/OtherHeader';
 import Form from './components/Form';
@@ -25,7 +22,6 @@ const ContactPage = () => {
               className="text-pink flex items-center gap-2 hover:underline"
             >
               <MdOutlineMarkEmailUnread size={20} />
-              {/* tj.doyin@gmail.com */}
             </a>
             <a
               href="https://www.linkedin.com/in/tejudoyin/"

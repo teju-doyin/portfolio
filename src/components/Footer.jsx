@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaLinkedin,FaGithub } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
