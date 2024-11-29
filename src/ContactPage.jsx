@@ -9,14 +9,17 @@ import HomeHeader from "./components/HomeHeader";
 const ContactPage = () => {
   return (
     <>
-     <Header className='lg:hidden'>
-      <OtherHeader text="Let's talk" />
+    <Header>
+      <div className="w-full lg:hidden">
+        <OtherHeader text="Let's Talk" />
+      </div>
+      <div className="hidden lg:block">
+        <HomeHeader />
+      </div>
     </Header>
-    <Header className='hidden lg:block '>
-      <HomeHeader/>
-    </Header>
+
     
-    <div className="md:mt-28 ">
+    <div className="mt-20 md:mt-28 ">
       <div className=" lg:flex text-brown w-[90%] mx-auto flex flex-col mt-[4rem] ">
         <Form/>
         <div className=" lg:w-[40%] lg:mx-auto mt-6 border-t border-brown pt-4 flex items-center justify-between">

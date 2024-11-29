@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { IoClose } from "react-icons/io5";
 import { TbMessageChatbot } from "react-icons/tb";
 
@@ -22,27 +21,37 @@ const MobileNav = ({toggleMenu,isMenuOpen}) => {
             onClick={toggleMenu}
         />
         <nav className="mt-24 flex flex-col justify-center items-center p-4 space-y-10">
-            <Link
-                to="/"
-                onClick={toggleMenu}
-                className="nav-link"
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-pink font-semibold border-b-2 border-pink"
+                  : "text-lightPink font-medium hover:text-pink hover:transition hover:delay-100"
+              }
             >
-                Home
-            </Link>
-            <Link
-                to="/ProjectsPage"
-                onClick={toggleMenu}
-                className="nav-link"
+              Home
+            </NavLink>
+            <NavLink
+              to="/ProjectsPage"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-pink font-semibold border-b-2 border-pink"
+                  : "text-lightPink font-medium hover:text-pink hover:transition hover:delay-100"
+              }
             >
-                Projects
-            </Link>
-            <Link
-                to="/ContactPage"
-                onClick={toggleMenu}
-                className="cursor-pointer nav-link flex items-center gap-2 border border-pink px-4 py-2 rounded-md hover:bg-white hover:transition hover:duration-500 hover:text-red-wine"
-            >
-                Let's Talk <TbMessageChatbot />
-            </Link>
+              Projects
+            </NavLink>
+          {/* </div> */}
+          <NavLink
+            to="/ContactPage"
+            className={({ isActive }) =>
+              isActive
+                ? "text-white bg-pink font-bold px-4 py-2 rounded-md flex items-center gap-2"
+                : "text-lightPink border font-medium border-pink px-4 py-2 rounded-md flex items-center gap-2 hover:text-pink hover:bg-white hover:transition hover:delay-100"
+            }
+          >
+            Let's Talk <TbMessageChatbot />
+          </NavLink>
         </nav>
     </div>
   )

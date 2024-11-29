@@ -41,17 +41,22 @@ const ProjectsPage = () => {
   }
   // const isTablet = useMediaQuery('(min-width: 640px)');
   const isLaptop = useMediaQuery('(min-width: 768px)');
+  // const isLargeScreen = useMediaQuery('(min-width: 1024px)');
+
 
   if (loading) {
     return (
       <section>
-        <Header className='lg:hidden'>
-          <OtherHeader text="Projects" />
+        <Header>
+          <div className="w-full lg:hidden">
+            <OtherHeader text="Projects" />
+          </div>
+          <div className="hidden lg:block">
+            <HomeHeader />
+          </div>
         </Header>
-        <Header className='hidden lg:block '>
-          <HomeHeader/>
-        </Header>
-        <div className=' w-[90%] mt-[5rem] sm:mt-[7rem] mx-auto sm:grid md:grid-cols-2 lg:grid-cols-3 gap-7   '>
+
+        <div className=' w-[90%] mt-[6rem]  mx-auto sm:grid md:grid-cols-2 lg:grid-cols-3 gap-7   '>
           {Array.from({ length: 6 }).map((_, index) => (
             <div key={index} className="mb-8 mt-4 ">
               <Skeleton className="bg-[#f8e2f2] w-full h-80 rounded-lg mb-12" />
@@ -64,16 +69,19 @@ const ProjectsPage = () => {
 
   return (
     <>
-    <Header className='lg:hidden'>
-      <OtherHeader text="Projects" />
+    <Header>
+      <div className="w-full lg:hidden">
+        <OtherHeader text="Projects" />
+      </div>
+      <div className="hidden lg:block">
+        <HomeHeader />
+      </div>
     </Header>
-    <Header className='hidden lg:block '>
-      <HomeHeader/>
-    </Header>
-    <div className='  mt-[5rem] sm:mt-[7rem] w-[90%] mx-auto'>
+
+    <div className='  mt-[6rem]  w-[90%] mx-auto'>
       
       <section className="sm:grid md:grid-cols-2  lg:grid-cols-3 gap-7  lg:mt-5">
-        {projects.map((project)=> <div key={project.id} className="border mb-8 border-pink p-2 rounded-2xl bg-offWhite">
+        {projects.map((project)=> <div key={project.id} className="border mb-8 border-pink p-2 rounded-[24px] bg-offWhite">
           <img
             src={isLaptop? project.images.desktop: project.images.mobile}
             alt={project.title}

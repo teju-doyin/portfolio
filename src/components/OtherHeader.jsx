@@ -2,7 +2,7 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 const OtherHeader = ({text}) => {
   return (
-    <div className="flex items-center w-[90%]">
+    <div className="flex items-center ">
         <Link to='/'>
           <FaArrowLeftLong size={30} className='bg-pink  p-2 cursor-pointer rounded-full text-white'/>
         </Link>

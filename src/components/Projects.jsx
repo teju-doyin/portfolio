@@ -47,7 +47,7 @@ const Projects = () => {
       >
         <CarouselContent>
         {projects.slice(0,3).map((project,index)=>(
-            <CarouselItem key={index} className="lg:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
               <div className="p-2">
                 <Card className="border border-pink rounded-lg bg-white ">
                   <CardContent className="flex text-blackish relative flex-col items-center justify-center p4 bg-white rounded-lg">
@@ -58,8 +58,8 @@ const Projects = () => {
                       className="w-full h- object-contain rounded-lg lg:rounded-t-lg "
                     />
 
-                    <div className="text-center absolute lg:mt-4 lg:static lg:border-none border border-pink bg-white text-blackish z-10 py-1 px-1.5  bottom-0 rounded-b-md rounded-t-[1.5rem] ">
-                      <Link target="_blank" className="text-lg font-bold text-pink-600 border-b-[1px] pb-[2px] rounded- border-b-pink" to={project.link}>
+                    <div className="text-center absolute lg:mt-4 lg:static lg:border-none border border-pink bg-white text-blackish z-10 py-1 px-1.5  bottom-0 rounded-b-[.3em] rounded-t-[1.5rem] ">
+                      <Link target="_blank" className="text-lg font-bold  border-b-[1px] pb-[2px] border-b-pink" to={project.link}>
                         {project.title}
                       </Link>
                       <p className="text-sm text-justify lg:text-center  lg:text-base  mt-1">
