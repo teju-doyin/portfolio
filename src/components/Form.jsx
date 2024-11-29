@@ -63,7 +63,7 @@ const Form = () => {
   };
 
   return (
-    <div className="rounded-t-3xl pt-4">
+    <div className="rounded-t-3xl pt-4 lg:w-[40%] lg:mx-auto">
       <div className="mb-8 text-center">
         <p className="text-brown text-center font-medium">
           Have a project in mind? Write me so we can make something amazing.

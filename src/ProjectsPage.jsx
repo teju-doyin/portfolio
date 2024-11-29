@@ -4,6 +4,7 @@ import { IoIosLink } from "react-icons/io";
 import { Skeleton } from "@/components/ui/skeleton";
 import Header from './components/Header';
 import OtherHeader from './components/OtherHeader';
+import HomeHeader from './components/HomeHeader';
 
 const ProjectsPage = () => {
   const [loading, setLoading] = useState(true);
@@ -26,37 +27,55 @@ const ProjectsPage = () => {
     };
     fetchProjects();
   }, []);
+  function useMediaQuery(query) {
+    const [matches, setMatches] = useState(window.matchMedia(query).matches);
+  
+    useEffect(() => {
+      const media = window.matchMedia(query);
+      const listener = () => setMatches(media.matches);
+      media.addEventListener('change', listener);
+      return () => media.removeEventListener('change', listener);
+    }, [query]);
+  
+    return matches;
+  }
+  // const isTablet = useMediaQuery('(min-width: 640px)');
+  const isLaptop = useMediaQuery('(min-width: 768px)');
 
   if (loading) {
     return (
       <section>
-        <Header>
-          <OtherHeader text='Projects' />
+        <Header className='lg:hidden'>
+          <OtherHeader text="Projects" />
         </Header>
-        <div className=' w-[90%] mt-[5rem] mx-auto sm:grid md:grid-cols-2 lg:grid-cols-3 gap-7  md:mt-5 '>
-          {Array.from({ length: 5 }).map((_, index) => (
+        <Header className='hidden lg:block '>
+          <HomeHeader/>
+        </Header>
+        <div className=' w-[90%] mt-[5rem] sm:mt-[7rem] mx-auto sm:grid md:grid-cols-2 lg:grid-cols-3 gap-7   '>
+          {Array.from({ length: 6 }).map((_, index) => (
             <div key={index} className="mb-8 mt-4 ">
               <Skeleton className="bg-[#f8e2f2] w-full h-80 rounded-lg mb-12" />
-              {/* <Skeleton className="bg-[#f8e2f2] h-4 w-1/5 mb-2 md:w-2/5" />
-              <Skeleton className="bg-[#f8e2f2] h-5 w-1/3 mb-2 md:w-2/3" />
-              <Skeleton className="bg-[#f8e2f2] h-4 w-1/5" /> */}
             </div>
           ))}
         </div>
       </section>
     );
   }
+
   return (
     <>
-    <Header>
-      <OtherHeader text='Projects' />
+    <Header className='lg:hidden'>
+      <OtherHeader text="Projects" />
+    </Header>
+    <Header className='hidden lg:block '>
+      <HomeHeader/>
     </Header>
     <div className='  mt-[5rem] sm:mt-[7rem] w-[90%] mx-auto'>
       
-      <section className="sm:grid md:grid-cols-2 lg:grid-cols-3 gap-7  md:mt-5">
+      <section className="sm:grid md:grid-cols-2  lg:grid-cols-3 gap-7  lg:mt-5">
         {projects.map((project)=> <div key={project.id} className="border mb-8 border-pink p-2 rounded-2xl bg-offWhite">
           <img
-            src={project.images.mobile}
+            src={isLaptop? project.images.desktop: project.images.mobile}
             alt={project.title}
             className="w-full rounded-2xl  "
           />

@@ -39,7 +39,7 @@ function App() {
   
 
   return (
-    <div className='overflow-x-hidden'>
+    <div className='overflow-x-hidden '>
       {isVisible && (
         <div
           onClick={scrollToTop}
@@ -50,7 +50,7 @@ function App() {
         </div>
       )}
       <div className="bg-offWhite">
-        <div className='bg-white border-l-[1px] border-l-pink rounded-bl-[3rem]'>
+        <div className='bg-white border-l-[1px] lg:border-none  border-l-pink rounded-bl-[4rem] lg:rounded-bl-[6rem]'>
           <div className="w-[90%] mx-auto rounded-bl-lg">
             <Header>
               <HomeHeader/>
@@ -59,14 +59,14 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="bg-white curved-section">
-        <div className="relative pb-12 rounded-tr-[3rem] rounded-br-[3rem] border-r-[1px] border-r-pink bg-offWhite">
+      <div className="bg-white curved-section  ">
+        <div className="relative pb-12 lg:border-none  rounded-tr-[4rem] lg:rounded-tr-[6rem] rounded-br-[4rem] lg:rounded-br-[6rem] border-r-[1px] border-r-pink bg-offWhite">
           <AboutMe />
           <Projects />
         </div>
       </div>
       <div className="bg-offWhite">
-        <div className="rounded-tl-[3rem]  bg-[#f8e2f2] border-l-[1px] border-l-pink">
+        <div className="rounded-tl-[4rem] lg:rounded-tl-[6rem] lg:border-none  bg-[#f8e2f2] border-l-[1px] border-l-pink">
           <div >
             <Contact />
           </div>

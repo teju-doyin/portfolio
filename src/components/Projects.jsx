@@ -1,3 +1,4 @@
+import {useEffect, useState} from 'react'
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -9,6 +10,20 @@ import {
 } from "@/components/ui/carousel";
 import projects from "../../public/projects.json"
 const Projects = () => {
+  function useMediaQuery(query) {
+    const [matches, setMatches] = useState(window.matchMedia(query).matches);
+  
+    useEffect(() => {
+      const media = window.matchMedia(query);
+      const listener = () => setMatches(media.matches);
+      media.addEventListener('change', listener);
+      return () => media.removeEventListener('change', listener);
+    }, [query]);
+  
+    return matches;
+  }
+  const isTablet = useMediaQuery('(min-width: 640px)');
+  const isLaptop = useMediaQuery('(min-width: 768px)');
   return (
     <section className="w-[90%] mx-auto">
       <div className="flex justify-center mb-5">
@@ -18,7 +33,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <p className="text-justify text-blackish mb-5">
+      <p className="text-justify text-blackish mb-5 lg:text-center lg:w-[60%] lg:mx-auto lg:mb-12">
         Here’s a glimpse at what I’ve been building! From interactive UIs to
         responsive web apps, these projects show my love for all things
         frontend.
@@ -28,25 +43,26 @@ const Projects = () => {
         opts={{
           align: "start",
         }}
-        className="w-[75%] mx-auto max-w-sm mb-5"
+        className="w-[75%] lg:w-full mx-auto  mb-5"
       >
         <CarouselContent>
         {projects.slice(0,3).map((project,index)=>(
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+            <CarouselItem key={index} className="lg:basis-1/2 lg:basis-1/3">
               <div className="p-2">
                 <Card className="border border-pink rounded-lg bg-white ">
                   <CardContent className="flex text-blackish relative flex-col items-center justify-center p4 bg-white rounded-lg">
                     <img
-                      src={project.images.thumbnail}
-                      alt="Project Thumbnail"
-                      className="w-full h- object-contain rounded-md "
+                      // src={isTablet?  (isLaptop? project.image.desktopThumbnail: project.image.tabletThumbnail): project.image.mobileThumbnail}
+                      src={isLaptop? project.images.desktopThumbnail: project.images.thumbnail}
+                      alt={project.title}
+                      className="w-full h- object-contain rounded-lg lg:rounded-t-lg "
                     />
 
-                    <div className="text-center absolute border border-pink bg-white text-blackish z-10 py-1 px-1.5  bottom-0 rounded-b-md rounded-t-[1.5rem] ">
-                      <Link className="text-lg font-bold text-pink-600 border rounded-sm border-b-pink" to={project.link}>
+                    <div className="text-center absolute lg:mt-4 lg:static lg:border-none border border-pink bg-white text-blackish z-10 py-1 px-1.5  bottom-0 rounded-b-md rounded-t-[1.5rem] ">
+                      <Link target="_blank" className="text-lg font-bold text-pink-600 border-b-[1px] pb-[2px] rounded- border-b-pink" to={project.link}>
                         {project.title}
                       </Link>
-                      <p className="text-sm text-justify  mt-1">
+                      <p className="text-sm text-justify lg:text-center  lg:text-base  mt-1">
                         {project.shortDescription}
                       </p>
                     </div>
@@ -58,8 +74,8 @@ const Projects = () => {
           ))}
         </CarouselContent>
 
-        <CarouselPrevious className="border border-pink text-pink hover:bg-pink hover:text-white" />
-        <CarouselNext className="border border-pink text-pink hover:bg-pink hover:text-white" />
+        <CarouselPrevious className="carousal-arrow" />
+        <CarouselNext className="carousal-arrow" />
       </Carousel>
 
       <p className="flex justify-center">

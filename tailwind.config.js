@@ -11,6 +11,7 @@ export default {
   			white: '#fffdff',
   			offWhite: '#f7f3f5',
   			pink: '#e22c75',
+  			lightPink: '#f196ae',
   			lavender: '#ea95d3',
   			gray: '#36424d',
   			blackish: '#282626',
@@ -61,7 +62,7 @@ export default {
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
+  			lg: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		}
   	}

@@ -1,4 +1,4 @@
-[
+  [
     {
       "id": 1,
       "title": "Dessertify",
@@ -8,7 +8,9 @@
       "images": {
         "thumbnail": "./desserts-thumbnail.jpg",
         "mobile": "./desserts-mobile.jpg",
-        "desktop": "./desserts-desktop.jpg"
+        "desktop": "./desserts-desktop.jpg",
+        "desktopThumbnail": "./desserts-desktopThumbnail.jpg"
+
       },
       "link": "https://dessert-product-page.vercel.app/"
     },
@@ -21,7 +23,8 @@
       "images": {
         "thumbnail": "./waitr-thumbnail.png",
         "mobile": "./waitr-mobile.png",
-        "desktop": "./waitr-desktop.png"
+        "desktop": "./waitr-desktop.png",
+        "desktopThumbnail": "./waitr-desktopThumbnail.png"
       },
       "link": "https://waitr-lbfh.onrender.com/"
     },
@@ -34,7 +37,8 @@
       "images": {
         "thumbnail": "./mortgage-calc-thumbnail.jpg",
         "mobile": "./mortgage-calc-mobile.jpg",
-        "desktop": "./mortgage-calc-desktop.png"
+        "desktop": "./mortgage-calc-desktop.png",
+        "desktopThumbnail": "./mortgage-calc-desktopThumbnail.png"
       },
       "link": ""
     },
